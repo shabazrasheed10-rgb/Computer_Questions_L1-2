@@ -438,6 +438,13 @@ nextButton.disabled = false;
             loadQuestion();
         }
 
+   function previousQuestion() {
+    if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        loadQuestion();
+    }
+   }
+
         function showFinalScore() {
             finalScoreText.textContent = `${score} / ${totalQuestions}`;
             finalScoreModal.classList.remove('hidden');
